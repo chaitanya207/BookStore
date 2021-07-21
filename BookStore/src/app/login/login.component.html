@@ -1,0 +1,17 @@
+<div class="login_section">
+    <mat-form-field class="full-width" appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter Name" #name>
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="legacy">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" #password>
+        </mat-form-field>
+        <button mat-raised-button (click)="login(name.value,password.value)" color="primary">Login</button>
+        <p class="lable_txt">if your Not registed with Book Store?</p>
+
+        <button mat-raised-button (click)="getRegister()" color="accent">Register</button>
+
+        <p *ngIf="isLoginIsValid">Please Enter Valid Inputs</p>
+</div>
+    

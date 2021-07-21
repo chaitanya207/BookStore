@@ -1,0 +1,14 @@
+<div class="login_section Register_section">
+    <mat-form-field class="full-width" appearance="legacy">
+        <mat-label>Name</mat-label>
+        <input matInput placeholder="Enter Name" #name>
+      </mat-form-field>
+      <mat-form-field class="full-width" appearance="legacy">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" #password>
+        </mat-form-field>
+        <button mat-raised-button (click)="createUser(name.value,password.value)" color="accent">Register</button>
+        <p class="lable_txt">if your alreday registed with Book Store?</p>
+        <button mat-raised-button (click)="backToLogin()" color="primary">Login</button>
+</div>
+    
